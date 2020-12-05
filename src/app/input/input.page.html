@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title style="font-weight: bold; font-size: 20px;">
+      {{ 'APP.TITLE_INPUT' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="divMain">
+    <ion-icon name="quote"></ion-icon>
+    <input type="text" [(ngModel)]="inputName" placeholder="{{ 'PAGES.INPUT_PAGE.LABELS.NAME' | translate }}"/>
+    <div class="divLine"></div>
+  </div>
+  <div class="divMain">
+    <ion-icon name="calendar"></ion-icon>
+    <ion-datetime [(ngModel)]="inputDate" value="{{ today | date }}" displayFormat="YYYY-MM-DD / HH:mm" ></ion-datetime>
+    <div class="divLine"></div>
+  </div>
+  <div class="divMain">
+    <ion-icon name="more"></ion-icon>
+    <ion-select [(ngModel)]="inputType" placeholder="{{ 'PAGES.INPUT_PAGE.DROPDOWN.SELECTONE' | translate }}">
+      <ion-select-option>{{ 'PAGES.INPUT_PAGE.DROPDOWN.BIRTHDAY' | translate }}</ion-select-option>
+      <ion-select-option>{{ 'PAGES.INPUT_PAGE.DROPDOWN.WEDDINGANIVESSARY' | translate }}</ion-select-option>
+    </ion-select>
+    <div class="divLine"></div>
+  </div>
+  <div class="divMain divBtn" style="text-align: center">
+    <ion-item>
+      <button (click)="btnSave()">{{ 'PAGES.INPUT_PAGE.LABELS.SAVEANDADD' | translate }}</button>
+    </ion-item>  
+  </div>
+</ion-content>

@@ -1,0 +1,38 @@
+{
+  "APP": {
+    "TITLE" : "Countdown",
+    "TITLE_INPUT" : "Add New Countdown" 
+  },
+  "PAGES": {
+    "HOME_PAGE" : {
+      "LABELS" : {
+          "DAY" : "DAYS",
+          "HOUR" : "HOURS",
+          "MINUTE" : "MINUTES",
+          "SECOND" : "SECONDS"
+      }
+    },
+    "INPUT_PAGE" : {
+      "LABELS" : {
+        "NAME" : "Name",
+        "DATEANDTIME" : "Date and Time",
+        "PHOTO" : "Photo",
+        "SAVEANDADD" : "Save and Add"
+      },
+      "DROPDOWN" : {
+        "SELECTONE" : "Select One",
+        "BIRTHDAY" : "Birthday",
+        "WEDDINGANIVESSARY" : "Wedding Anniversary"         
+      },
+      "CHECKBOX" : {
+        "DELETEAFTERDATE" : "Delete After Date",
+        "NOTIFICATION" : "Notification"
+      },
+      "DROPDOWN_NOTIFICATION" : { 
+        "ALERT30MIN" : "Alert 30 Minute Ago",
+        "ALERT1HOUR" : "Alert 1 Hour Ago",
+        "ALERT2HOUR" : "Alert 2 Hour Ago"
+      }
+    }
+  }
+}

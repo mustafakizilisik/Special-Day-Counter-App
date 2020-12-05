@@ -1,0 +1,55 @@
+ion-card-title { color:white; }
+
+ion-title {
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.new-background-color{
+    --background: var(--ion-color-primary);
+    color:white;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.float {
+    float: left;
+    margin-right: 5px;
+}
+
+label { 
+    color:white;
+}
+
+.lblNumbers {
+    font-size: 30px;
+}
+
+.lblTexts {
+    font-weight: bold;
+    font-size:11.5px;
+}
+
+ion-fab {
+    margin-top: 140%;
+    margin-left: 88%;
+    color: var(--ion-color-primary);
+}
+
+ion-icon {
+    color: var(--ion-color-primary);
+}
+
+ion-fab-button {
+    --background: white;
+}

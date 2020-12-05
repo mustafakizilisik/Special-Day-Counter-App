@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      {{ 'APP.TITLE' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="new-background-color" *ngFor= "let cardModel of cardModelList">
+    <ion-card-header class="center">
+      <ion-card-title class="title">{{ cardModel.title }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+        <ion-item class="new-background-color">
+            <div class="center">
+              <div class="float" >
+                <label class="lblTexts">{{ 'PAGES.HOME_PAGE.LABELS.DAY' | translate }}</label><br>
+                <label class="lblNumbers">{{ cardModel.day }}</label>
+              </div>
+              <div class="float">
+                <label class="lblTexts">{{ 'PAGES.HOME_PAGE.LABELS.HOUR' | translate }}</label><br>
+                <label class="lblNumbers">{{ cardModel.hour }}</label>
+              </div>
+              <div class="float">
+                <label class="lblTexts">{{ 'PAGES.HOME_PAGE.LABELS.MINUTE' | translate }}</label><br>
+                <label class="lblNumbers">{{ cardModel.minute }}</label>
+              </div>
+              <div class="float">
+                <label class="lblTexts">{{ 'PAGES.HOME_PAGE.LABELS.SECOND' | translate }}</label><br>
+                <label class="lblNumbers">{{ cardModel.second }}</label>
+              </div><br>
+              <label class="lblTexts" style="font-size: 16px">{{ cardModel.date | date:'MM/dd/yyyy' }}</label>
+            </div>
+          </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="end" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="btnAdd()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

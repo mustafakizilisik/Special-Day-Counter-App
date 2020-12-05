@@ -1,0 +1,7 @@
+{
+  "name": "sayacApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,65 @@
+.new-background-color{
+    --background: var(--ion-color-primary);
+    color:white;
+}
+
+ion-card-title { color:white; }
+
+ion-datetime {
+    height: 40px;
+    border: 0px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 85%;
+}
+
+ion-icon {
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+input {
+    height: 40px;
+    border: 0px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 85%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.divLine {
+    border-bottom: 1px solid var(--ion-color-primary);
+}
+
+.divMain {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ion-select {
+    font-size: 16px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background: white;
+    color:var(--ion-color-primary);
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid var(--ion-color-primary);
+}
+
+.divBtn {
+    justify-content: center;
+	display: flex!important;
+ 	align-items: center!important;
+}
+
